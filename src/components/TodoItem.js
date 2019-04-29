@@ -9,10 +9,10 @@ export class TodoItem extends Component {
   }
 
   render() {
-    const { id, title, userId } = this.props.todo;
+    const { id, title, userId, completed } = this.props.todo;
     return (
       <div style={divStyle}>
-        <input type="checkbox" onChange={this.props.markComplete.bind(this, id)} />
+        <input type="checkbox" checked={completed} onChange={this.props.markComplete.bind(this, id)} />
         <p style={this.getStyle()}>
           {title}
         </p>
