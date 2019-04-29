@@ -20,7 +20,7 @@ export class TodoItem extends Component {
         { title }
         <button onClick={this.props.delTodo.bind(this, id)} style={btnStyle}>Delete</button>
       </p>
-        <p style={paragraphStyle}>{this.props.todo.priority}</p>
+        <p style={paragraphStyle}>{ this.props.priority }</p>
         <p style={{ backgroundColor: 'gray' }}>{this.props.todo.id}</p>
       </div>
     )
